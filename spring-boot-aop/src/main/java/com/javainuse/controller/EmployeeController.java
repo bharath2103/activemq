@@ -29,5 +29,10 @@ public class EmployeeController {
 
 		return "Employee removed";
 	}
+	
+	@RequestMapping(value ="/sample")
+	public String sampleMessage() {
+		return "This is a sample message";
+	}
 
 }

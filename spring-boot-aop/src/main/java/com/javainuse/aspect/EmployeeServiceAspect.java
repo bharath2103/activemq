@@ -23,4 +23,10 @@ public class EmployeeServiceAspect {
 
 		System.out.println("Successfully created Employee with name - " + name + " and id - " + empId);
 	}
+	
+	@Before(value ="execution(public String com.javainuse.controller.EmployeeController.sampleMessage())")
+	public void sampleAdvice() {
+		System.out.println("Sample Controller Advice executed");
+	}
+	
 }
